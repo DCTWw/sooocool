@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intangible Cultural Heritage | 非物质文化遗产</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Microsoft YaHei", sans-serif;
+    }
+    body {
+      background: #f7f6f2;
+      color: #333;
+      line-height: 1.7;
+    }
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .lang {
+      margin-top: 10px;
+    }
+    .lang button {
+      padding: 6px 14px;
+      margin: 0 6px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      background: #fff;
+      color: #2c3e50;
+      font-weight: bold;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+    .section {
+      background: white;
+      padding: 25px;
+      margin-bottom: 25px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    .section h2 {
+      margin-bottom: 15px;
+      color: #2c3e50;
+      border-left: 5px solid #e74c3c;
+      padding-left: 12px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 15px;
+      margin-top: 15px;
+    }
+    .gallery img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 6px;
+      box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+    }
+    .zh, .en {
+      display: none;
+    }
+    .zh.active, .en.active {
+      display: block;
+    }
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #2c3e50;
+      color: white;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1 class="zh active">中国非物质文化遗产</h1>
+  <h1 class="en">Chinese Intangible Cultural Heritage</h1>
+  <div class="lang">
+    <button onclick="showLang('zh')">中文</button>
+    <button onclick="showLang('en')">English</button>
+  </div>
+</header>
+
+<div class="container">
+  <!-- 简介 -->
+  <div class="section">
+    <h2 class="zh active">非遗简介</h2>
+    <h2 class="en">Introduction</h2>
+    <div class="zh active">
+      非物质文化遗产是各族人民世代相传的传统文化表现形式，包括传统技艺、民俗、戏曲、音乐、美术等，是民族文化的珍贵财富。
+    </div>
+    <div class="en">
+      Intangible Cultural Heritage (ICH) refers to traditional cultural expressions passed down through generations, including crafts, folklore, operas, music, and fine arts. It is a precious treasure of national culture.
+    </div>
+  </div>
+
+  <!-- 分类 -->
+  <div class="section">
+    <h2 class="zh active">非遗主要类别</h2>
+    <h2 class="en">Main Categories</h2>
+    <ul class="zh active" style="margin-left:20px">
+      <li>传统手工艺：金石篆刻、陶艺、扎染、西兰卡普</li>
+      <li>传统表演艺术：京剧、昆曲、皮影戏、花灯</li>
+      <li>民俗节庆：春节、端午、中秋、苗族芦笙节</li>
+      <li>传统医药、饮食文化、民间文学等</li>
+    </ul>
+    <ul class="en" style="margin-left:20px">
+      <li>Traditional Crafts: Paper-cutting, Embroidery, Pottery, Wood Carving</li>
+      <li>Performing Arts: Peking Opera, Kunqu Opera, Shadow Puppetry</li>
+      <li>Folk Festivals: Spring Festival, Dragon Boat Festival, Mid-Autumn Festival</li>
+      <li>Traditional Medicine, Food Culture, Folk Literature, etc.</li>
+    </ul>
+  </div>
+
+  <!-- 相册 -->
+  <div class="section">
+    <h2 class="zh active">非遗影像展示</h2>
+    <h2 class="en">Photo Gallery</h2>
+    <div class="gallery">
+      <img src="xilankapu.jpg" alt="非遗图片">
+      <img src="xilankapu_mao.jpg" alt="非遗图片">
+      <img src="huadeng.jpg" alt="非遗图片">
+      <img src="jinshizhuanke.jpg" alt="非遗图片">
+    </div>
+  </div>
+
+  <!-- 可扩展内容区 -->
+  <div class="section">
+    <h2 class="zh active">特色非遗项目（可自行添加）</h2>
+    <h2 class="en">Featured ICH Items (Editable)</h2>
+    <div class="zh active">
+      <p><strong>1. 西兰卡普</strong><br>
+      西兰卡普是土家族传统手工织锦，土家语意为“花铺盖”，采用通经断纬技艺，以麻、棉纱为经线，多色彩粗丝、毛绒线为纬线手工编织而成。其纹样涵盖动物、植物、几何等类型，“四十八勾”象征团结美满，“阳雀鸟”承载祖先迁徙传说，被称作“高度浓缩的土家族文化”。该技艺雏形于秦汉时期，成型于两晋，成熟于唐宋，精于明清，1957年随土家族民族身份确认正式定名。</p>
+      <br>
+      <p><strong>2. 花灯戏</strong><br>
+     花灯戏是广泛流行于中国各地的一种传统曲艺。其突出特征是手不离扇、帕，载歌载舞，唱与做紧密结合。花灯戏源于民间花灯歌舞，是清末民初形成的一种地方戏曲形式。在流行过程中因受当地方言、民歌、习俗等影响而形成不同演唱和表演风格。
+</p>
+    </div>
+    <div class="en">
+      <p><strong>1. Paper-cutting Art</strong><br>
+      Paper-cutting is one of China’s most popular folk arts. Scissors and colored paper create flowers, figures, and auspicious patterns for festivals.</p>
+      <br>
+      <p><strong>2. Shu Embroidery</strong><br>
+      A traditional embroidery craft from Sichuan, known for delicate stitches and bright colors. It is one of China’s Four Famous Embroideries.</p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p class="zh active">青年探非遗·跨域焕新声</p>
+  <p class="en">Preserve ICH · Carry Forward Chinese Civilization</p>
+</footer>
+
+<script>
+  function showLang(lang) {
+    document.querySelectorAll('.zh,.en').forEach(el => {
+      el.classList.remove('active');
+    });
+    document.querySelectorAll('.' + lang).forEach(el => {
+      el.classList.add('active');
+    });
+    document.documentElement.lang = lang;
+  }
+</script>
+</body>
+</html>
